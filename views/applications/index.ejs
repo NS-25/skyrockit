@@ -9,8 +9,15 @@
   <title>Your Apps</title>
 </head>
 
+<!-- views/index.ejs -->
+
 <body>
-  <h1>Your Apps</h1>
+  <%- include('../partials/_navbar.ejs') %>
+    <h1>Skyrockit</h1>
+    <a href="/users/<%=user._id%>/applications/new">Add an App</a>
+    <p>A job application tracker.</p>
+    
 </body>
+
 
 </html>
